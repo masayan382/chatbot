@@ -1,0 +1,88 @@
+{
+	"init": {
+		"answers": [
+			{ "content": "仕事を依頼したい", "nextId": "job_offer" },
+			{
+				"content": "エンジニアへの転職ついて相談したい",
+				"nextId": "consultant"
+			},
+			{
+				"content": "プログラミングの勉強法ついて知りたい",
+				"nextId": "programming"
+			},
+			{ "content": "お付き合いしたい", "nextId": "dating" }
+		],
+		"question": "こんにちは！ご用件はなんでしょうか？"
+	},
+	"job_offer": {
+		"answers": [
+			{ "content": "Webサイトを制作してほしい", "nextId": "website" },
+			{ "content": "Webアプリを開発してほしい", "nextId": "webapp" },
+			{ "content": "WordpressでBLOGを作ってほしい", "nextId": "blog" },
+			{ "content": "その他", "nextId": "other_jobs" }
+		],
+		"question": "どのようなお仕事でしょうか？"
+	},
+	"website": {
+		"answers": [
+			{ "content": "問い合わせる", "nextId": "contact" },
+			{ "content": "最初の質問に戻る", "nextId": "init" }
+		],
+		"question": "Webサイト細作についてですね。コチラからお問い合わせできます。"
+	},
+	"webapp": {
+		"answers": [
+			{ "content": "問い合わせる", "nextId": "contact" },
+			{ "content": "最初の質問に戻る", "nextId": "init" }
+		],
+		"question": "Webアプリ開発についてですね。コチラからお問い合わせできます。"
+	},
+	"blog": {
+		"answers": [
+			{ "content": "問い合わせる", "nextId": "contact" },
+			{ "content": "最初の質問に戻る", "nextId": "init" }
+		],
+		"question": "WordpressでBLOG制作についてですね。コチラからお問い合わせできます。"
+	},
+	"other_jobs": {
+		"answers": [
+			{ "content": "問い合わせる", "nextId": "contact" },
+			{ "content": "最初の質問に戻る", "nextId": "init" }
+		],
+		"question": "その他についてですね。コチラからお問い合わせできます。"
+	},
+	"consultant": {
+		"answers": [
+			{
+				"content": "問い合わせる",
+				"nextId": "contact"
+			},
+			{
+				"content": "最初の質問に戻る",
+				"nextId": "init"
+			}
+		],
+		"question": "コチラからお問い合わせできます。"
+	},
+	"programming": {
+		"answers": [
+			{
+				"content": "「ドットインストール」をチェック",
+				"nextId": "https://dotinstall.com/"
+			},
+			{
+				"content": "「プロゲート」をチェック",
+				"nextId": "https://prog-8.com/"
+			},
+			{ "content": "最初の質問に戻る", "nextId": "init" }
+		],
+		"question": "私がお世話になったおすすめサイトがこちらです"
+	},
+	"dating": {
+		"answers": [
+			{ "content": "DMする", "nextId": "contact" },
+			{ "content": "最初の質問に戻る", "nextId": "init" }
+		],
+		"question": "まずは一緒にランチでもいかがですか？DMしてください😘"
+	}
+}
